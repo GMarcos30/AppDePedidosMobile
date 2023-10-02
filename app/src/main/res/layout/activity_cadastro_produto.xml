@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.AppPedidos.CadastroProdutoActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Cadastro de Produtos"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o código do produto"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edCodProduto"
+        android:background="@drawable/edit_text_border"/> <!-- Adiciona a borda ao redor do EditText -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe a descrição do produto"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edDescProduto"
+        android:background="@drawable/edit_text_border"/> <!-- Adiciona a borda ao redor do EditText -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor unitário:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe o valor unitário do produto"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edValorProduto"
+        android:background="@drawable/edit_text_border"/> <!-- Adiciona a borda ao redor do EditText -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btSalvarProduto"
+        android:background="@drawable/button_background"/> <!-- Estilo diferente para o botão -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvListaProdutos"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
